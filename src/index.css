@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B8F3C;
+  --color-black: #141414;
+  --color-white: #FFFFFF;
+  --color-bg: #F9FAFB;
+  --color-text-muted: #6B7280;
+  
+  --font-sans: 'Poppins', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-black);
+}
+
+/* Remove default spin buttons from number inputs for a cleaner UI and prevent number cutoff */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
